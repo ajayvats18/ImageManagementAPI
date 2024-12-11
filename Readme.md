@@ -1,7 +1,7 @@
 Steps:
 
 Run the application in IIS express mode
-Use Postman for testing
+Use Postman for testing - SWAGGER WILL NOT WORK AS IT DOESN'T SUPPORT IFormFile and NEEDS WORKAROUND TO SUPPORT
 
 GetAll - https://localhost:44332/api/ImageManagementAPI/GetAll
 GetById - https://localhost:44332/api/ImageManagementAPI/GetImageById/2
