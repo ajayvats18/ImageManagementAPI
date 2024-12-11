@@ -1,0 +1,12 @@
+C:\POC\Image\ImageManagementAPI-main\ImageManagement.Domain\bin\Debug\net6.0\ImageManagement.Domain.deps.json
+C:\POC\Image\ImageManagementAPI-main\ImageManagement.Domain\bin\Debug\net6.0\ImageManagement.Domain.dll
+C:\POC\Image\ImageManagementAPI-main\ImageManagement.Domain\bin\Debug\net6.0\ImageManagement.Domain.pdb
+C:\POC\Image\ImageManagementAPI-main\ImageManagement.Domain\obj\Debug\net6.0\ImageManagement.Domain.csproj.AssemblyReference.cache
+C:\POC\Image\ImageManagementAPI-main\ImageManagement.Domain\obj\Debug\net6.0\ImageManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\POC\Image\ImageManagementAPI-main\ImageManagement.Domain\obj\Debug\net6.0\ImageManagement.Domain.AssemblyInfoInputs.cache
+C:\POC\Image\ImageManagementAPI-main\ImageManagement.Domain\obj\Debug\net6.0\ImageManagement.Domain.AssemblyInfo.cs
+C:\POC\Image\ImageManagementAPI-main\ImageManagement.Domain\obj\Debug\net6.0\ImageManagement.Domain.csproj.CoreCompileInputs.cache
+C:\POC\Image\ImageManagementAPI-main\ImageManagement.Domain\obj\Debug\net6.0\ImageManagement.Domain.dll
+C:\POC\Image\ImageManagementAPI-main\ImageManagement.Domain\obj\Debug\net6.0\refint\ImageManagement.Domain.dll
+C:\POC\Image\ImageManagementAPI-main\ImageManagement.Domain\obj\Debug\net6.0\ImageManagement.Domain.pdb
+C:\POC\Image\ImageManagementAPI-main\ImageManagement.Domain\obj\Debug\net6.0\ref\ImageManagement.Domain.dll
