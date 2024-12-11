@@ -147,11 +147,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\POC\\Image\\ImageManagementBackendAPIProject\\ImageManagement.Infrastructure\\ImageManagement.Infrastructure.csproj",
+      "projectUniqueName": "C:\\POC\\Image\\ImageManagementAPI-main\\ImageManagement.Infrastructure\\ImageManagement.Infrastructure.csproj",
       "projectName": "ImageManagement.Infrastructure",
-      "projectPath": "C:\\POC\\Image\\ImageManagementBackendAPIProject\\ImageManagement.Infrastructure\\ImageManagement.Infrastructure.csproj",
+      "projectPath": "C:\\POC\\Image\\ImageManagementAPI-main\\ImageManagement.Infrastructure\\ImageManagement.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\vatsa1\\.nuget\\packages\\",
-      "outputPath": "C:\\POC\\Image\\ImageManagementBackendAPIProject\\ImageManagement.Infrastructure\\obj\\",
+      "outputPath": "C:\\POC\\Image\\ImageManagementAPI-main\\ImageManagement.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -173,8 +173,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\POC\\Image\\ImageManagementBackendAPIProject\\ImageManagement.Domain\\ImageManagement.Domain.csproj": {
-              "projectPath": "C:\\POC\\Image\\ImageManagementBackendAPIProject\\ImageManagement.Domain\\ImageManagement.Domain.csproj"
+            "C:\\POC\\Image\\ImageManagementAPI-main\\ImageManagement.Domain\\ImageManagement.Domain.csproj": {
+              "projectPath": "C:\\POC\\Image\\ImageManagementAPI-main\\ImageManagement.Domain\\ImageManagement.Domain.csproj"
             }
           }
         }

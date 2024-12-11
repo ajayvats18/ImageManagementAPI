@@ -80,33 +80,8 @@
         "IsRequired": false
       },
       {
-        "Name": "Id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "User",
+        "Name": "imageDetails",
         "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Url",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Description",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "FileName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "DateCreated",
-        "Type": "System.DateTime",
         "IsRequired": false
       }
     ],
