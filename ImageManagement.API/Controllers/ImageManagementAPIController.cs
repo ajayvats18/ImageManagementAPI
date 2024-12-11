@@ -1,4 +1,7 @@
-﻿namespace ImageManagement.Controllers;
+﻿using System.Text.RegularExpressions;
+using System;
+
+namespace ImageManagement.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
@@ -18,7 +21,7 @@ public class ImageManagementAPIController : ControllerBase
 		var images = await _repo.GetAll();
 		return Ok(images);
 	}
-	
+
 	[HttpGet("GetImageById/{id}")]
 	public async Task<IActionResult> GetImageDetailsById(int id)
 	{
@@ -27,13 +30,15 @@ public class ImageManagementAPIController : ControllerBase
 	}
 
 	[HttpPost("Upload")]
-	public async Task<IActionResult> UploadImage([FromForm] IFormFile file, [FromForm] ImageModel imageDetails)
+	public async Task<IActionResult> UploadImage([FromForm] IFormFile file, [FromForm] string imageDetails)
 	{
-		if (file?.Length == 0)
+		var model = ValidateImageModel(imageDetails);
+		if (file?.Length == 0 || model == null)
 		{
-			return BadRequest("Please select file to be uploaded.");
+			return BadRequest("Please select valid file to be uploaded and check the image model.");
 		}
-		var response = await _repo.SaveImage(imageDetails, file);
+
+		var response = await _repo.SaveImage(JsonSerializer.Deserialize<ImageModel>(imageDetails), file);
 		return CreatedAtAction(nameof(UploadImage), response);
 	}
 
@@ -48,5 +53,26 @@ public class ImageManagementAPIController : ControllerBase
 		await _repo.DeleteImageById(id);
 
 		return NoContent();
+	}
+
+	private ImageModel ValidateImageModel(string imageModelString)
+	{
+		try
+		{
+			var model = JsonSerializer.Deserialize<ImageModel>(imageModelString);
+			string urlPattern = @"^(https?:\/\/)?([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}(:\d+)?(\/\S*)?$";
+			if (string.IsNullOrWhiteSpace(model?.User)
+			   || string.IsNullOrWhiteSpace(model?.Description)
+			   || string.IsNullOrWhiteSpace(model?.Url)
+			   || !Regex.IsMatch(model?.Url, urlPattern)
+			  )
+				return null;
+
+			return model;
+		}
+		catch (Exception)
+		{
+			return null;
+		}
 	}
 }
